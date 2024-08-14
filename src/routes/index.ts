@@ -6,12 +6,10 @@ const router = Router()
 
 router.get('/', PageController.home);
 router.get('/pizza', PageController.pizza);
-router.get('/hamburguer', PageController.hamburguer);
-router.get('/hotdog', PageController.hotdog);
+router.get('/fast_foods', PageController.fast_food);
 router.get('/refrigerantes', PageController.refrigerantes);
 router.get('/sucos', PageController.sucos);
 router.get('/pratos', PageController.pratos);
-
 router.get('/search', searchController.search);
 
 

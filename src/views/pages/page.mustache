@@ -1,0 +1,24 @@
+{{>partials/header}}
+
+<main>
+    {{#banner}}
+    <h2 class="tituloBanner">{{title}}</h2>
+    <div class="banner" style="background-image: url('/imagens/{{background}}');"></div>
+    {{/banner}}
+
+    <section class="cabecalhoDasecaoComidas">
+        <h2>Confira Todas Nossas Opções</h2>
+        <img src="/imagens/undraw_hamburger_re_7sfy.svg" alt="">
+    </section>
+
+    <section class="secaoDasComidas">
+        <div class="itemSecaoComidas">
+            <img src="/imagens/pizza.jpg" alt="">
+            <h3>pizza de calabresa com frango catupiry</h3>
+            <span>R$ 39,99</span>
+            <button>vizualizar</button>
+        </div>
+    </section>
+</main>
+
+{{>partials/footer}}
