@@ -13,9 +13,13 @@
     --espaco30: 30px;
 }
 
+.ativo {
+    background-color: var(--amarelo);
+}
+
 body {
     font-family: 'Lato', sans-serif;
-}
+    }
 
 main {
     max-width: 1200px;
@@ -90,6 +94,7 @@ header .areaPesquisa {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .tituloBanner {
@@ -121,8 +126,8 @@ header .areaPesquisa {
 
 .secaoDasComidas {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
     padding: var(--espaco20) 0;
     gap: var(--espaco20);
     background-color: whitesmoke;
@@ -137,11 +142,13 @@ header .areaPesquisa {
     flex-direction: column;
     gap: var(--espaco10);
     padding: var(--espaco10);
+    justify-self: center;
 }
 
 .itemSecaoComidas img {
     width: 250px;
     height: 200px;
+    object-fit: cover;
 }
 
 .itemSecaoComidas h3 {
@@ -165,6 +172,18 @@ header .areaPesquisa {
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+.secaoDasComidasVazia {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.secaoDasComidasVazia h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--verde-escuro);
 }
 
 .itemSecaoComidas button:hover {

@@ -7,17 +7,27 @@
     {{/banner}}
 
     <section class="cabecalhoDasecaoComidas">
+        {{#svg}}
         <h2>Confira Todas Nossas Opções</h2>
-        <img src="/imagens/undraw_hamburger_re_7sfy.svg" alt="">
+        <img src="/imagens/{{background}}" alt="">
+        {{/svg}}
     </section>
 
     <section class="secaoDasComidas">
+        {{#lista}}
         <div class="itemSecaoComidas">
-            <img src="/imagens/pizza.jpg" alt="">
-            <h3>pizza de calabresa com frango catupiry</h3>
-            <span>R$ 39,99</span>
+            <img src="/imagens/comidas/{{imagem}}" alt="">
+            <h3>{{nome}}</h3>
+            <span>R$ {{preco}}</span>
             <button>vizualizar</button>
         </div>
+        {{/lista}}
+
+        {{^lista}}
+        <div class="secaoDasComidasVazia">
+            <h2>Nenhum item encontrado</h2>
+        </div>
+        {{/lista}}
     </section>
 </main>
 
